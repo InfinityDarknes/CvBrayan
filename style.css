@@ -55,7 +55,7 @@ section
     display: block;
     width: 35%;
     margin: 0 auto;
-    top: 100px; /* este estilo se activa con una posicion relativa, indicanto un margen superior*/
+    top: 10%; /* este estilo se activa con una posicion relativa, indicanto un margen superior*/
 }
 
 .avatar
@@ -74,69 +74,95 @@ section
     font-size: 45px;/* tamaño de la fuente */ 
     color: aliceblue;
     font-family: Impact, helvertica, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
 }
-
 .links
 {
-    padding-top: 25px;
-    width: 100%;
-    margin-left: 20%;
-    /*margin: 0 auto;   Centra un elemento de tipo bloque */
-}
-
-a
-{
-    padding: 38px 0px 0px 7px;
-    height: 100px;
-    width: 100px;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-radius: 20px;
-    color: white;
     display: inline-block;
+    margin: 20px 0 0 10px;
+}
+
+.links ul
+{
+    list-style: none;
+}
+.links ul li
+{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 10px;
     text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid white;
+    float: left;
+    transition: all 0.5s ease;
+    font-size: 35px;
 }
-
-.instagram
+.links ul li .fa
 {
-    background-color: rgb(196, 83, 194);
+    color: #d8e2dc;
+    margin-top: 20px;
+    transition: all 0.5s ease;
 }
-.instagram:hover
+.links ul li:hover.facebook
 {
-    background-color: rgb(214, 11, 236);
-    position: relative;
-    bottom: 1px;
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998 ;
+    transition: all 0.5s ease;
 }
-
-.facebook
+.links ul li:hover .fa-facebook
 {
-    background-color: rgb(142, 164, 254);
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998 ;
+    transition: all 0.5s ease;
 }
-.facebook:hover
+.links ul li:hover.twitter
 {
-    background-color: rgb(38, 78, 237);
-    position: relative;
-    bottom: 1px;
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced ;
+    transition: all 0.5s ease;
 }
-
-.linkedin
+.links ul li:hover .fa-twitter
 {
-    background-color: rgb(99, 123, 220);
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced ;
+    transition: all 0.5s ease;
 }
-.linkedin:hover
+.links ul li:hover.instagram
 {
-    background-color: rgb(17, 62, 242);
-    position: relative;
-    bottom: 1px;
+    border: 5px solid #bc2a8e;
+    box-shadow: 0 0 15px #bc2a8e ;
+    transition: all 0.5s ease;
 }
-
-.twitter {
-    background-color: rgb(48, 200, 255);
-}
-.twitter:hover
+.links ul li:hover .fa-instagram
 {
-    background-color: rgb(5, 190, 241);
-    position: relative;
-    bottom: 1px;
+    color: #bc2a8e;
+    text-shadow: 0 0 15px #bc2a8e ;
+    transition: all 0.5s ease;
+}
+.links ul li:hover.whatsapp
+{
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247 ;
+    transition: all 0.5s ease;
+}
+.links ul li:hover .fa-whatsapp
+{
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247 ;
+    transition: all 0.5s ease;
+}
+.links ul li:hover.linkedin
+{
+    border: 5px solid #0a66c2;
+    box-shadow: 0 0 15px #0a66c2 ;
+    transition: all 0.5s ease;
+}
+.links ul li:hover .fa-linkedin
+{
+    color: #0a66c2;
+    text-shadow: 0 0 15px #0a66c2 ;
+    transition: all 0.5s ease;
 }
